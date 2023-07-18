@@ -1,0 +1,17 @@
+package exam05_1;
+
+public class TestCat {
+
+	public static void main(String[] args) {
+		
+		Cat c = new Cat("툥냥",2,"수컷");
+		
+//		c.age = 100;  // 직접 접근 불가
+		
+//      public int n = 10; // 로컬변수는 접근지정자 사용불가
+		
+	
+
+	}
+
+}
