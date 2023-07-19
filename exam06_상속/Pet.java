@@ -1,6 +1,6 @@
-package exam06_1;
+package exam06_2;
 
-// Cat, Dog, Bird 의 부모 클래스
+
 public class Pet {
 	
 	String name;
@@ -12,7 +12,11 @@ public class Pet {
 	public void sleep() {
 		System.out.println("Pet.sleep");
 	}
-	public Pet() {}
+	
+	// 생성자
+	public Pet() {
+		System.out.println("Pet 생성자");
+	}
 	public Pet(String name, int age) {
 		this.name = name;
 		this.age = age;
