@@ -1,28 +1,37 @@
-package exam06_1;
+package exam06;
 
-// Cat is a Pet ==> 상속관계
-public class Cat extends Pet {
-
+public class Cat {
 	
-	public void run() {
-		System.out.println("Cat.run");
-	}
+	String name;
+	int age;
 	
-	//메서드 재정의(overriding)
-	@Override //@로 시작하는 코드를 어노테이션 이라고 부른다
 	public void eat() {
-		System.out.println("Cat.eat");
+		System.out.println("고양이 먹기");
+	}
+	public void sleep() {
+		System.out.println("고양이 자기");
+	}
+	public void run() {
+		System.out.println("고양이 뛰기");
 	}
 	
-	@Override
-	public void sleep() {
-		System.out.println("Cat.sleep");
-	}
-
 	public Cat() {}
 	
 	public Cat(String name, int age) {
 		this.name = name;
+		this.age = age;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
 		this.age = age;
 	}
 	
