@@ -1,17 +1,8 @@
-package exam06;
+package exam06_1;
 
-public class Dog {
+public class Dog extends Pet {
 	
-	String name;
-	int age;
 	String sex;
-	
-	public void eat() {
-		System.out.println("강아지 먹기");
-	}
-	public void sleep() {
-		System.out.println("강아지 자기");
-	}
 	
 	public Dog() {}
 	
@@ -20,18 +11,17 @@ public class Dog {
 		this.age = age;
 		this.sex = sex;
 	}
-	public String getName() {
-		return name;
+	
+	@Override
+	public void eat() {
+		System.out.println("Dog.eat");
 	}
-	public void setName(String name) {
-		this.name = name;
+
+	@Override
+	public void sleep() {
+		System.out.println("Dog.sleep");
 	}
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
-	}
+
 	public String getSex() {
 		return sex;
 	}
